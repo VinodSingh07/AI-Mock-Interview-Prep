@@ -6,7 +6,7 @@ import { Button } from "./ui/button";
 import DisplayTechIcons from "./DisplayTechIcons";
 
 import { cn, getRandomInterviewCover } from "@/lib/utils";
-import { getFeedbackByInterviewId } from "@/lib/actions/general.actions";
+import { getFeedbackByInterviewId } from "@/lib/actions/general.action";
 
 const InterviewCard = async ({
   interviewId,
@@ -89,7 +89,7 @@ const InterviewCard = async ({
         </div>
 
         <div className="flex flex-row justify-between">
-         <DisplayTechIcons techStack={techstack} />
+          <DisplayTechIcons techStack={techstack} />
 
           <Button className="btn-primary">
             <Link
